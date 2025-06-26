@@ -17,5 +17,11 @@
     "mrenclave": {
       "framework": "TDX"
     }
+  },
+  "dataset": {
+    "owner": "0xCE9F90486892b859CF6520F6ddb6dcA464aD1FE8",
+    "name": "my-dataset",
+    "multiaddr": "/ipfs/QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ",
+    "checksum": "0x0000000000000000000000000000000000000000000000000000000000000000"
   }
 }

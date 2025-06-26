@@ -4,6 +4,13 @@ tmp/*
 tmp/
 chain.json
 deployed.json
+.secrets/*
+input_example/history.jsonl
+input_example/sample_1.txt
+input_example/sample_10.txt
+input_example/sample_5.txt
+datasets
+datasets/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

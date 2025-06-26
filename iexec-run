@@ -1,0 +1,7 @@
+iexec app run 0xd08cc8D7d21793006492A8Bb5f9378b50C240C00 \
+  --chain bellecour \
+  --wallet-file test_wallet \
+  --params "{\"iexec_input_files\":[\"https://raw.githubusercontent.com/ericr6/teemagotchi/main/input_example/data.txt\",\"https://raw.githubusercontent.com/ericr6/teemagotchi/main/input_example/question.txt\"]}" \
+  --tag tee,tdx \
+  --workerpool tdx-labs.pools.iexec.eth \
+  --watch

@@ -1,0 +1,21 @@
+{
+  "description": "My iExec resource description, must be at least 150 chars long in order to pass the validation checks. Describe your application, dataset or workerpool to your users",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {},
+  "app": {
+    "owner": "0x7d7428ffc98cc36dfe2e60c10d0e618454cb8A4b",
+    "name": "timandpo",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/ericro/teamagotchi:0.0.1",
+    "checksum": "0xea14c7907c64a829c9f2845f0ee0aa27b2d14ad2f742d3dbaa80ab64e4b0502b",
+    "mrenclave": {
+      "framework": "TDX"
+    }
+  }
+}

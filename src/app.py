@@ -15,6 +15,7 @@ import onnxruntime as ort
 DATA = "/iexec_in/data.txt"
 INPUT_QUESTION = "/iexec_in/question.txt"
 OUTPUT_FILE = "/iexec_out/result.txt"
+iexec_out = os.environ['IEXEC_OUT']
 
 # ========== EXPORT ONNX ==========
 def export_emotion_model_onnx(output_path="onnx-emotion/model.onnx"):
@@ -150,6 +151,12 @@ def main():
         f.flush()
         os.fsync(f.fileno())
 
+    # Declare everything is computed
+    with open(iexec_out + '/computed.json', 'w+') as f:
+        json.dump({ "deterministic-output-path" : iexec_out + '/result.txt' }, f)
+        f.flush()
+        os.fsync(f.fileno())
+        
     print("✅ Output written to", OUTPUT_FILE)
 
 if __name__ == "__main__":

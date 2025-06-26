@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  rabbit:
+    image: rabbitmq:3.13-management
+    container_name: rabbit
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ai
+      RABBITMQ_DEFAULT_PASS: supersecret
+    networks: [ai-bridge]
+    ports:               # optional – for local UI
+      - "15672:15672"    # http://localhost:15672  user: ai / pass: supersecret
+
+  ngrok:
+    image: ngrok/ngrok:latest          # ▶ multi-arch
+    container_name: ngrok
+    restart: unless-stopped
+    depends_on: [rabbit]
+    networks: [ai-bridge]
+    # ngrok/ngrok uses the CLI directly as ENTRYPOINT
+    command: ["tcp", "--region", "eu", "rabbit:5672"]
+    environment:
+      NGROK_AUTHTOKEN: "${NGROK_AUTHTOKEN}"
+    ports:             
+      - "4040:4040"   
+
+networks:
+  ai-bridge:
+    driver: bridge
+
+

@@ -13,15 +13,15 @@
     "name": "timandpo",
     "type": "DOCKER",
     "multiaddr": "docker.io/ericro/teamagotchi:0.0.1",
-    "checksum": "0xea14c7907c64a829c9f2845f0ee0aa27b2d14ad2f742d3dbaa80ab64e4b0502b",
+    "checksum": "0x0c4defdae316cdfed39c6920bbb9b2e9d0fc34d1f7d0d3f02cb64a4eae533dbd",
     "mrenclave": {
       "framework": "TDX"
     }
   },
   "dataset": {
-    "owner": "0xCE9F90486892b859CF6520F6ddb6dcA464aD1FE8",
-    "name": "my-dataset",
-    "multiaddr": "/ipfs/QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ",
-    "checksum": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    "owner": "0x7d7428ffc98cc36dfe2e60c10d0e618454cb8A4b",
+    "name": "sample_teamagotchi",
+    "multiaddr": "https://raw.githubusercontent.com/ericr6/teemagotchi/main/input_example/data.txt.enc",
+    "checksum": "0xb0eef9843b3b52f723a45b5a794a4e0741db486eaa9dc714a85da8a57f7a35e3"
   }
 }

@@ -20,8 +20,8 @@
   },
   "dataset": {
     "owner": "0x7d7428ffc98cc36dfe2e60c10d0e618454cb8A4b",
-    "name": "sample_teamagotchi",
+    "name": "data_teamagotchi",
     "multiaddr": "https://raw.githubusercontent.com/ericr6/teemagotchi/main/input_example/data.txt.enc",
-    "checksum": "0xb0eef9843b3b52f723a45b5a794a4e0741db486eaa9dc714a85da8a57f7a35e3"
+    "checksum": "0x137c4b9fd06fec07f711ddaa9b05f5fd169fdf6082a4194e45358f3b7de66bc4"
   }
 }
